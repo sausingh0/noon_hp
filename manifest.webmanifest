@@ -1,0 +1,17 @@
+{
+  "name": "Noon Screenshot Clone",
+  "short_name": "Noon Clone",
+  "description": "Interactive iPhone-first clone of the provided Noon-style homepage screenshot.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f6f7fb",
+  "theme_color": "#feee00",
+  "icons": [
+    {
+      "src": "assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

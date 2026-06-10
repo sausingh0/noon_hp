@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title">
+  <title id="title">Noon homepage app icon</title>
+  <rect width="512" height="512" rx="116" fill="#feee00" />
+  <circle cx="390" cy="122" r="70" fill="#fff6a4" opacity="0.78" />
+  <rect x="78" y="156" width="356" height="220" rx="56" fill="#242424" />
+  <path
+    fill="#feee00"
+    d="M140 304V208h44l42 52v-52h44v96h-42l-44-54v54h-44Zm154 0V208h44v56l54-56h50l-59 58 62 38h-57l-50-33v33h-44Z"
+  />
+</svg>
