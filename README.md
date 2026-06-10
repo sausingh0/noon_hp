@@ -1,12 +1,12 @@
 # noon_hp
 
-Interactive, iPhone-first recreation of a Noon-style ecommerce homepage.
+Interactive, iPhone-first clone of the provided Noon-style homepage screenshot.
 
 ## What is included
 
 - Mobile Safari-friendly static web app
-- Noon-inspired yellow header, delivery selector, search bar, promo hero, categories, deal rail, product grid, and bottom navigation
-- Interactive search suggestions, category filtering, wishlist toggles, cart counter, toast messages, and countdown timer
+- Screenshot-matched stacked feed: blue header, service tiles, vouchers, compact promo cards, dense product rails, category grids, yellow deal banners, and bottom navigation
+- Subtle interactions for search filtering, category taps, service tab states, wishlist toggles, cart counter, and toast messages
 - Web app manifest and SVG icon so it can be added to an iPhone home screen
 
 ## Run locally

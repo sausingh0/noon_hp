@@ -1,303 +1,287 @@
 const products = [
   {
-    id: 1,
-    title: "Apple iPhone 15 Pro Max 256GB Natural Titanium",
-    category: "electronics",
-    price: 4299,
-    oldPrice: 5099,
-    rating: "4.7",
-    sold: "8.3K",
-    badge: "17% off",
-    gradient: "linear-gradient(145deg, #d8dde6, #7b8493)",
-    rotation: "-8deg",
+    title: "Watermelon chunks fresh cut 250g",
+    category: "snacks",
+    price: "8.95",
+    old: "12.50",
+    off: "28%",
+    rate: "4.6",
+    g: "linear-gradient(180deg, #ffffff, #25a76b 58%, #ef4b5d)",
+    w: "42px",
+    h: "50px",
   },
   {
-    id: 2,
-    title: "Wireless Noise Cancelling Headphones with 40h Battery",
-    category: "electronics",
-    price: 189,
-    oldPrice: 349,
-    rating: "4.5",
-    sold: "2.1K",
-    badge: "Hot",
-    gradient: "linear-gradient(145deg, #252b38, #6f7c95)",
-    rotation: "10deg",
+    title: "Greek yoghurt strawberry pack",
+    category: "snacks",
+    price: "5.50",
+    old: "8.00",
+    off: "31%",
+    rate: "4.7",
+    g: "linear-gradient(180deg, #fff, #f55d86)",
+    w: "44px",
+    h: "45px",
   },
   {
-    id: 3,
-    title: "Luxury Matte Lip Kit and Hydrating Gloss Bundle",
+    title: "Chocolate wafer bites family bag",
+    category: "snacks",
+    price: "12.25",
+    old: "18.00",
+    off: "32%",
+    rate: "4.5",
+    g: "linear-gradient(180deg, #704520, #f2c15b)",
+    w: "50px",
+    h: "43px",
+    r: "12px",
+  },
+  {
+    title: "Sparkling water lemon cans",
+    category: "drinks",
+    price: "14.00",
+    old: "22.00",
+    off: "36%",
+    rate: "4.8",
+    g: "linear-gradient(180deg, #f8ffff, #55c2e6)",
+    w: "28px",
+    h: "58px",
+  },
+  {
+    title: "Shampoo repair care bottle",
     category: "beauty",
-    price: 59,
-    oldPrice: 119,
-    rating: "4.6",
-    sold: "4.8K",
-    badge: "50% off",
-    gradient: "linear-gradient(145deg, #ff81a5, #9b4dff)",
-    rotation: "13deg",
+    price: "19.95",
+    old: "31.00",
+    off: "35%",
+    rate: "4.4",
+    g: "linear-gradient(180deg, #171d2b, #f0546a)",
+    w: "31px",
+    h: "61px",
   },
   {
-    id: 4,
-    title: "Premium Sneaker Collection Lightweight Everyday Shoes",
-    category: "fashion",
-    price: 139,
-    oldPrice: 299,
-    rating: "4.4",
-    sold: "1.7K",
-    badge: "Deal",
-    gradient: "linear-gradient(145deg, #ff944d, #ef3340)",
-    rotation: "-11deg",
-  },
-  {
-    id: 5,
-    title: "Smart Air Fryer 6L Digital Display Family Size",
+    title: "Laundry capsules clean scent",
     category: "home",
-    price: 249,
-    oldPrice: 399,
-    rating: "4.3",
-    sold: "980",
-    badge: "Save",
-    gradient: "linear-gradient(145deg, #f7f9fb, #7b879b)",
-    rotation: "8deg",
+    price: "29.50",
+    old: "48.00",
+    off: "39%",
+    rate: "4.6",
+    g: "linear-gradient(180deg, #ffffff, #3176d5)",
+    w: "46px",
+    h: "51px",
+    r: "13px",
   },
   {
-    id: 6,
-    title: "Fresh Pantry Essentials Bundle Rice Pasta Sauces",
-    category: "grocery",
-    price: 74,
-    oldPrice: 112,
-    rating: "4.8",
-    sold: "6.4K",
-    badge: "Fresh",
-    gradient: "linear-gradient(145deg, #ffd54a, #14c784)",
-    rotation: "-6deg",
+    title: "Roasted salted cashews pouch",
+    category: "snacks",
+    price: "16.75",
+    old: "23.00",
+    off: "27%",
+    rate: "4.3",
+    g: "linear-gradient(180deg, #fff1b8, #d98434)",
+    w: "45px",
+    h: "50px",
+    r: "15px 15px 11px 11px",
+  },
+  {
+    title: "Cold brew coffee bottle",
+    category: "drinks",
+    price: "9.95",
+    old: "13.00",
+    off: "23%",
+    rate: "4.5",
+    g: "linear-gradient(180deg, #f6efe5, #2c1d16)",
+    w: "29px",
+    h: "61px",
+  },
+  {
+    title: "Toothpaste whitening twin pack",
+    category: "beauty",
+    price: "11.50",
+    old: "19.00",
+    off: "39%",
+    rate: "4.6",
+    g: "linear-gradient(180deg, #ffffff, #1e8adb)",
+    w: "54px",
+    h: "30px",
+    r: "8px",
+  },
+  {
+    title: "Kitchen tissue jumbo rolls",
+    category: "home",
+    price: "21.75",
+    old: "35.00",
+    off: "38%",
+    rate: "4.7",
+    g: "linear-gradient(180deg, #ffffff, #99d2ff)",
+    w: "50px",
+    h: "48px",
+    r: "18px",
+  },
+  {
+    title: "Energy drink assorted cans",
+    category: "drinks",
+    price: "18.00",
+    old: "26.00",
+    off: "31%",
+    rate: "4.4",
+    g: "linear-gradient(180deg, #111827, #6ee7b7)",
+    w: "30px",
+    h: "59px",
+  },
+  {
+    title: "Ice cream mini cups vanilla",
+    category: "snacks",
+    price: "13.95",
+    old: "20.00",
+    off: "30%",
+    rate: "4.8",
+    g: "linear-gradient(180deg, #fff8d8, #c46bff)",
+    w: "47px",
+    h: "43px",
+    r: "9px 9px 16px 16px",
   },
 ];
 
-const searchTerms = [
-  "iphone 15 pro max",
-  "air fryer",
-  "sneakers",
-  "makeup bundle",
-  "grocery deals",
-  "headphones",
-  "home essentials",
+const categories = [
+  ["Fresh fruits", "#e7f9ef"],
+  ["Dairy", "#fff2cb"],
+  ["Bakery", "#ffe2d5"],
+  ["Snacks", "#e7efff"],
+  ["Drinks", "#ddf7ff"],
+  ["Beauty", "#ffe5ee"],
+  ["Cleaning", "#e6fbf3"],
+  ["Pets", "#f3e7ff"],
+  ["Baby care", "#fff3e1"],
+  ["Pharmacy", "#e8f1ff"],
 ];
 
-const productGrid = document.querySelector("#product-grid");
-const quickLinks = document.querySelectorAll(".quick-link");
-const categoryCards = document.querySelectorAll(".category-card");
-const searchInput = document.querySelector("#site-search");
-const suggestions = document.querySelector("#suggestions");
-const cartCount = document.querySelector(".cart-count");
-const toast = document.querySelector("#toast");
-const resetProducts = document.querySelector("#reset-products");
-const countdown = document.querySelector("#countdown");
-const navItems = document.querySelectorAll(".nav-item");
+const essentials = [
+  ["Milk", "#fff4cf"],
+  ["Eggs", "#eef8ff"],
+  ["Bread", "#ffe6d2"],
+  ["Water", "#e3f8ff"],
+  ["Coffee", "#f5e6d7"],
+  ["Rice", "#f4f2df"],
+  ["Detergent", "#e7f0ff"],
+  ["Shampoo", "#ffe5ed"],
+  ["Tissues", "#eef4ff"],
+  ["Juice", "#e5fff1"],
+];
 
-let activeCategory = "all";
-let activeQuery = "";
+const recommended = document.querySelector("#recommended-products");
+const deals = document.querySelector("#deal-products");
+const more = document.querySelector("#more-products");
+const stack = document.querySelector("#stack-products");
+const categoryGrid = document.querySelector("#category-grid");
+const essentialsGrid = document.querySelector("#essentials-grid");
+const searchInput = document.querySelector("#search-input");
+const tabs = document.querySelectorAll(".tab");
+const cartCount = document.querySelector("#cart-count");
+const toast = document.querySelector("#toast");
+
+let activeFilter = "all";
 let cartTotal = 0;
 let toastTimer;
-let secondsRemaining = 2 * 60 * 60;
 
-function money(value) {
-  return new Intl.NumberFormat("en-AE").format(value);
+function productMarkup(product) {
+  return `
+    <article class="product-card" data-category="${product.category}" data-title="${product.title.toLowerCase()}">
+      <div
+        class="product-image"
+        style="--g:${product.g}; --w:${product.w}; --h:${product.h}; --r:${product.r || "10px"}; --rot:${product.rot || "-3deg"}"
+      >
+        <span class="discount">${product.off}</span>
+        <button type="button" class="wish" aria-label="Save ${product.title}">+</button>
+      </div>
+      <div class="product-title">${product.title}</div>
+      <div class="meta"><span>${product.rate}</span><span>fast</span></div>
+      <div class="price-line">
+        <small>AED</small>
+        <strong>${product.price}</strong>
+        <span class="old">${product.old}</span>
+      </div>
+      <button type="button" class="add" aria-label="Add ${product.title} to cart">+</button>
+    </article>
+  `;
 }
 
-function visibleProducts() {
-  const normalizedQuery = activeQuery.trim().toLowerCase();
-
-  return products.filter((product) => {
-    const matchesCategory = activeCategory === "all" || product.category === activeCategory;
-    const matchesQuery =
-      normalizedQuery.length === 0 ||
-      product.title.toLowerCase().includes(normalizedQuery) ||
-      product.category.includes(normalizedQuery);
-
-    return matchesCategory && matchesQuery;
-  });
+function categoryMarkup([label, color]) {
+  return `
+    <button type="button" class="category-tile" data-category-name="${label.toLowerCase()}">
+      <span class="cat-icon" style="--bg:${color}"></span>
+      <span>${label}</span>
+    </button>
+  `;
 }
 
 function renderProducts() {
-  const matches = visibleProducts();
-
-  if (matches.length === 0) {
-    productGrid.innerHTML = `
-      <div class="empty-state">
-        No matching deals. Try a different search or category.
-      </div>
-    `;
-    return;
-  }
-
-  productGrid.innerHTML = matches
-    .map(
-      (product) => `
-        <article class="product-card">
-          <div
-            class="product-visual"
-            style="--product-gradient: ${product.gradient}; --product-rotation: ${product.rotation}"
-          >
-            <span class="badge">${product.badge}</span>
-            <button class="wishlist" type="button" aria-label="Save ${product.title}" data-id="${product.id}">
-              &hearts;
-            </button>
-          </div>
-          <h3 class="product-title">${product.title}</h3>
-          <div class="rating" aria-label="Rating ${product.rating} out of 5">
-            <span>Star ${product.rating}</span>
-            <span>(${product.sold})</span>
-          </div>
-          <div class="price-row">
-            <span class="currency">AED</span>
-            <span class="price">${money(product.price)}</span>
-            <span class="old-price">${money(product.oldPrice)}</span>
-          </div>
-          <button class="add-button" type="button" data-id="${product.id}">Add to cart</button>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function updateActiveCategory(category) {
-  activeCategory = category;
-
-  quickLinks.forEach((button) => {
-    button.classList.toggle("active", button.dataset.category === category);
+  const query = searchInput.value.trim().toLowerCase();
+  const filtered = products.filter((product) => {
+    const inTab = activeFilter === "all" || product.category === activeFilter;
+    const inSearch = query.length === 0 || product.title.toLowerCase().includes(query);
+    return inTab && inSearch;
   });
 
-  categoryCards.forEach((button) => {
-    button.classList.toggle("selected", button.dataset.category === category);
-  });
-
-  renderProducts();
-}
-
-function renderSuggestions(query) {
-  const normalizedQuery = query.trim().toLowerCase();
-  if (!normalizedQuery) {
-    suggestions.hidden = true;
-    suggestions.innerHTML = "";
-    return;
-  }
-
-  const matches = searchTerms
-    .filter((term) => term.includes(normalizedQuery))
-    .slice(0, 4);
-
-  if (matches.length === 0) {
-    suggestions.hidden = true;
-    suggestions.innerHTML = "";
-    return;
-  }
-
-  suggestions.innerHTML = matches
-    .map(
-      (term) => `
-        <button class="suggestion-item" type="button" data-term="${term}">
-          <span aria-hidden="true">Search</span>
-          <strong>${term}</strong>
-        </button>
-      `
-    )
-    .join("");
-  suggestions.hidden = false;
+  const source = filtered.length ? filtered : products.slice(0, 4);
+  recommended.innerHTML = source.slice(0, 8).map(productMarkup).join("");
+  deals.innerHTML = source.slice(3).concat(source.slice(0, 3)).slice(0, 8).map(productMarkup).join("");
+  more.innerHTML = source.slice().reverse().slice(0, 8).map(productMarkup).join("");
+  stack.innerHTML = source.slice(0, 6).map(productMarkup).join("");
 }
 
 function showToast(message) {
   clearTimeout(toastTimer);
   toast.textContent = message;
   toast.hidden = false;
-
   toastTimer = window.setTimeout(() => {
     toast.hidden = true;
-  }, 1800);
+  }, 1300);
 }
 
-function updateCountdown() {
-  secondsRemaining = Math.max(0, secondsRemaining - 1);
-  const hours = String(Math.floor(secondsRemaining / 3600)).padStart(2, "0");
-  const minutes = String(Math.floor((secondsRemaining % 3600) / 60)).padStart(2, "0");
-  const seconds = String(secondsRemaining % 60).padStart(2, "0");
-  countdown.textContent = `${hours}:${minutes}:${seconds}`;
-}
+categoryGrid.innerHTML = categories.map(categoryMarkup).join("");
+essentialsGrid.innerHTML = essentials.map(categoryMarkup).join("");
+renderProducts();
 
-quickLinks.forEach((button) => {
-  button.addEventListener("click", () => updateActiveCategory(button.dataset.category));
-});
-
-categoryCards.forEach((button) => {
-  button.addEventListener("click", () => updateActiveCategory(button.dataset.category));
-});
-
-searchInput.addEventListener("input", (event) => {
-  activeQuery = event.target.value;
-  renderSuggestions(activeQuery);
-  renderProducts();
-});
-
-searchInput.addEventListener("focus", () => renderSuggestions(searchInput.value));
-
-document.addEventListener("click", (event) => {
-  const suggestion = event.target.closest(".suggestion-item");
-  const addButton = event.target.closest(".add-button");
-  const wishlist = event.target.closest(".wishlist");
-
-  if (!event.target.closest(".search-form") && !event.target.closest(".suggestions")) {
-    suggestions.hidden = true;
-  }
-
-  if (suggestion) {
-    activeQuery = suggestion.dataset.term;
-    searchInput.value = activeQuery;
-    suggestions.hidden = true;
+tabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    tabs.forEach((item) => item.classList.remove("active"));
+    tab.classList.add("active");
+    activeFilter = tab.dataset.filter;
     renderProducts();
-  }
-
-  if (addButton) {
-    const product = products.find((item) => item.id === Number(addButton.dataset.id));
-    cartTotal += 1;
-    cartCount.textContent = String(cartTotal);
-    showToast(`${product.title.split(" ").slice(0, 3).join(" ")} added to cart`);
-  }
-
-  if (wishlist) {
-    wishlist.classList.toggle("saved");
-    showToast(wishlist.classList.contains("saved") ? "Saved to wishlist" : "Removed from wishlist");
-  }
-});
-
-resetProducts.addEventListener("click", () => {
-  activeQuery = "";
-  searchInput.value = "";
-  updateActiveCategory("all");
-  suggestions.hidden = true;
-});
-
-navItems.forEach((item) => {
-  item.addEventListener("click", () => {
-    navItems.forEach((navItem) => navItem.classList.remove("active"));
-    item.classList.add("active");
-    showToast(`${item.textContent.trim()} selected`);
   });
 });
 
-document.querySelector(".primary-cta").addEventListener("click", () => {
-  document.querySelector(".product-section").scrollIntoView({ behavior: "smooth", block: "start" });
-});
+searchInput.addEventListener("input", renderProducts);
 
-document.querySelector(".cart-button").addEventListener("click", () => {
-  showToast(cartTotal === 0 ? "Your cart is empty" : `${cartTotal} item${cartTotal === 1 ? "" : "s"} in cart`);
-});
+document.addEventListener("click", (event) => {
+  const add = event.target.closest(".add");
+  const wish = event.target.closest(".wish");
+  const nav = event.target.closest(".nav-button");
+  const service = event.target.closest(".service-card");
+  const category = event.target.closest(".category-tile");
 
-document.querySelector(".deliver-to").addEventListener("click", () => {
-  showToast("Delivering to Dubai. Location selector opened.");
-});
+  if (add) {
+    cartTotal += 1;
+    cartCount.textContent = String(cartTotal);
+    showToast("Added to cart");
+  }
 
-document.querySelector(".scan-button").addEventListener("click", () => {
-  showToast("Barcode scanner demo");
-});
+  if (wish) {
+    wish.classList.toggle("saved");
+    showToast(wish.classList.contains("saved") ? "Saved" : "Removed");
+  }
 
-renderProducts();
-window.setInterval(updateCountdown, 1000);
+  if (nav) {
+    document.querySelectorAll(".nav-button").forEach((button) => button.classList.remove("active"));
+    nav.classList.add("active");
+  }
+
+  if (service) {
+    document.querySelectorAll(".service-card").forEach((button) => button.classList.remove("active"));
+    service.classList.add("active");
+  }
+
+  if (category) {
+    const term = category.dataset.categoryName.split(" ")[0];
+    searchInput.value = term;
+    renderProducts();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+});
