@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#feee00" />
+    <meta
+      name="description"
+      content="A mobile-first interactive recreation of a Noon-style ecommerce homepage for iPhone."
+    />
+    <title>Noon Mobile Homepage</title>
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="assets/icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="phone-shell" aria-label="Interactive iPhone homepage mockup">
+      <header class="top-bar">
+        <div class="status-row" aria-hidden="true">
+          <span>9:41</span>
+          <span class="status-icons">5G&nbsp;|||&nbsp;100%</span>
+        </div>
+
+        <div class="brand-row">
+          <a href="#" class="logo" aria-label="Noon home">noon</a>
+          <button class="deliver-to" type="button" aria-label="Change delivery location">
+            <span class="pin">PIN</span>
+            <span>
+              <small>Deliver to</small>
+              <strong>Dubai</strong>
+            </span>
+          </button>
+          <button class="icon-button cart-button" type="button" aria-label="Open cart">
+            <span aria-hidden="true">Bag</span>
+            <span class="cart-count" aria-live="polite">0</span>
+          </button>
+        </div>
+
+        <form class="search-form" role="search">
+          <label class="visually-hidden" for="site-search">Search noon</label>
+          <span aria-hidden="true">Go</span>
+          <input
+            id="site-search"
+            type="search"
+            autocomplete="off"
+            placeholder="What are you looking for?"
+          />
+          <button type="button" class="scan-button" aria-label="Scan barcode">Scan</button>
+        </form>
+
+        <div class="suggestions" id="suggestions" hidden></div>
+      </header>
+
+      <main>
+        <section class="quick-strip" aria-label="Popular departments">
+          <button class="quick-link active" type="button" data-category="all">All</button>
+          <button class="quick-link" type="button" data-category="electronics">Electronics</button>
+          <button class="quick-link" type="button" data-category="beauty">Beauty</button>
+          <button class="quick-link" type="button" data-category="fashion">Fashion</button>
+          <button class="quick-link" type="button" data-category="home">Home</button>
+          <button class="quick-link" type="button" data-category="grocery">Grocery</button>
+        </section>
+
+        <section class="hero-card" aria-label="Main promotion">
+          <div class="hero-copy">
+            <span class="eyebrow">Mega deals</span>
+            <h1>Everything you need, delivered fast.</h1>
+            <p>Up to 70% off phones, beauty, fashion and daily essentials.</p>
+            <button type="button" class="primary-cta">Shop now</button>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <span class="box box-one"></span>
+            <span class="box box-two"></span>
+            <span class="box box-three"></span>
+          </div>
+        </section>
+
+        <section class="deal-ticker" aria-label="Limited-time offer">
+          <span class="flash">%</span>
+          <strong>Yellow Friday starts now</strong>
+          <span id="countdown">02:00:00</span>
+        </section>
+
+        <section class="category-grid" aria-labelledby="category-title">
+          <div class="section-heading">
+            <h2 id="category-title">Shop by category</h2>
+            <button type="button" class="text-button">View all</button>
+          </div>
+          <div class="category-list">
+            <button class="category-card" type="button" data-category="electronics">
+              <span class="category-icon electronics">Ph</span>
+              <span>Mobiles</span>
+            </button>
+            <button class="category-card" type="button" data-category="fashion">
+              <span class="category-icon fashion">Fa</span>
+              <span>Fashion</span>
+            </button>
+            <button class="category-card" type="button" data-category="beauty">
+              <span class="category-icon beauty">Be</span>
+              <span>Beauty</span>
+            </button>
+            <button class="category-card" type="button" data-category="home">
+              <span class="category-icon home">Ho</span>
+              <span>Home</span>
+            </button>
+            <button class="category-card" type="button" data-category="grocery">
+              <span class="category-icon grocery">Gr</span>
+              <span>Grocery</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="promo-rail" aria-label="Top promotions">
+          <article class="mini-promo yellow">
+            <small>noon one</small>
+            <strong>Free delivery</strong>
+            <span>Join today</span>
+          </article>
+          <article class="mini-promo blue">
+            <small>Bank deal</small>
+            <strong>10% back</strong>
+            <span>On cards</span>
+          </article>
+          <article class="mini-promo pink">
+            <small>Beauty</small>
+            <strong>Buy 2 get 1</strong>
+            <span>Selected items</span>
+          </article>
+        </section>
+
+        <section class="product-section" aria-labelledby="deals-title">
+          <div class="section-heading">
+            <h2 id="deals-title">Recommended for you</h2>
+            <button type="button" class="text-button" id="reset-products">Reset</button>
+          </div>
+          <div class="product-grid" id="product-grid"></div>
+        </section>
+      </main>
+
+      <nav class="bottom-nav" aria-label="Primary">
+        <button type="button" class="nav-item active">
+          <span>Hm</span>
+          Home
+        </button>
+        <button type="button" class="nav-item">
+          <span>Cat</span>
+          Categories
+        </button>
+        <button type="button" class="nav-item">
+          <span>Wish</span>
+          Wishlist
+        </button>
+        <button type="button" class="nav-item">
+          <span>Me</span>
+          Account
+        </button>
+      </nav>
+
+      <aside class="toast" id="toast" role="status" aria-live="polite" hidden></aside>
+    </div>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
